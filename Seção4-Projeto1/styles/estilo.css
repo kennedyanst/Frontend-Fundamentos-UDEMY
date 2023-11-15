@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.hero {
+    background-image: url(../imagens/wallpaper.svg);
+    height: 500px;
+    background-size: cover;
+    background-position: right center;
+    padding-top: 1px;
+}
+
+.hero-content {
+    margin: 100px auto 0;
+    width: 80%;
+    text-align: center;
+    color: cyan;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.hero-content p {
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 18px;
+    display: inline-block;
+    padding: 16px;
+    border-bottom: 2px solid;
+}
+
+.hero nav ul {
+    margin: 20px 80px 0 0;
+    text-align: right;
+}
+
+.hero nav li {
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid cyan;
+    margin-left: 16px;
+}
+
+.hero nav a {
+    background-color: rgba(0, 0, 0, .3);
+    padding: 16px;
+    display: block;
+    color: cyan;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero nav a:hover {
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    max-width: 860px;
+}
+
+article {
+    padding: 16px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    border-radius: 15px;
+    background-color: rgba(243, 9, 243, 0.295);
+    color: white;
+
+}
+
+.html{
+    border: 2px solid #ccc;
+}
+.css{
+    border: 2px solid cyan;
+}
+.js{
+    border: 2px solid violet;
+}
+
+article h2 {
+    background-color: rgb(1, 66, 66);
+    padding: 10px;
+    margin-top: 0;
+}
+
+.html h2{
+    border-bottom: 1px solid white;
+}
+
+.css h2{
+    border-bottom: 1px solid cyan;
+}
+
+.js h2{
+    border-bottom: 1px solid violet;
+}
+
+.btn {
+    background-color: #cdc7c3;
+    display: block;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.rodape {
+    color: white;
+    background-color: #6b6c68;
+    text-align: center;
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+}
