@@ -1,80 +1,58 @@
-html, body{
-    height: 100%;
-
-}
-
 body {
     background: url(imagens/fundo.jpg) no-repeat center center fixed;
     background-size: cover;
     margin: 0;
-    padding: 0;
+    padding: 32px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display : flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;; 
 }
 
 .main-title {
-    color: #fff;
+    color: #0e0d0d;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.list-wrapper {
-    background-color: rgba(255, 255, 255, 0.823);
-    width: 90%;
-    max-width: 500px;
-    max-height: 400px;
-    overflow-y: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    border: 2px solid black;
-}
-
 .list{
+    width: 90%;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    
 }
 
 .list-item{
-    display: flex;
-    border-bottom: 1px solid black;
-    padding: 16px;
+    flex-basis: 280px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    background-image: url("imagens/thumb02.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-.list-item:hover{
-    background-color: #d6d2d2;
-}
-
-.list-item__imagem img{
-    width: 80px;
+.list-item__imagem img {
     border-radius: 50%;
-}
-
-.list-item__content{
-    padding: 0 20px;
-    flex-grow: 1;
+    width: 80px;
+    margin-top: 120px;
 }
 
 .list-item__name{
-    font-size: 24px;
-    color: #385555;
     margin: 0;
-}
-
-.list-item__email{
-    margin: 5px 0 0;
-    color: #aaa;
+    font-size: 24px;
+    color: black
 }
 
 .list-item__action{
     display: flex;
-    gap: 8px;
-    align-items: center;
-    opacity: 0;
-}
-
-.list-item:hover .list-item__action{
-    opacity: .5;
+    background-color: #e5e5e5;
+    padding: 16px;
+    justify-content: space-evenly;
+    gap: 16px;
 }
