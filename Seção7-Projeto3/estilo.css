@@ -1,5 +1,7 @@
 body{
     background-color: rgb(18, 18, 18);
+    background-image: url("imagens/figma.png");
+    background-size: cover;
     color: white;
     width: 90%;
     max-width: 1080px;
@@ -12,14 +14,210 @@ body{
     text-transform: uppercase;
     text-align: center;
     margin: 46px 0;
+        -webkit-animation: flicker-in-1 2s linear infinite both;
+                animation: flicker-in-1 2s linear infinite both;
 }
+
+@-webkit-keyframes flicker-in-1 {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+    }
+    10.1% {
+      opacity: 1;
+    }
+    10.2% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    20.1% {
+      opacity: 1;
+    }
+    20.6% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 0;
+    }
+    30.1% {
+      opacity: 1;
+    }
+    30.5% {
+      opacity: 1;
+    }
+    30.6% {
+      opacity: 0;
+    }
+    45% {
+      opacity: 0;
+    }
+    45.1% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    55% {
+      opacity: 1;
+    }
+    55.1% {
+      opacity: 0;
+    }
+    57% {
+      opacity: 0;
+    }
+    57.1% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    60.1% {
+      opacity: 0;
+    }
+    65% {
+      opacity: 0;
+    }
+    65.1% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    75.1% {
+      opacity: 0;
+    }
+    77% {
+      opacity: 0;
+    }
+    77.1% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+    }
+    85.1% {
+      opacity: 0;
+    }
+    86% {
+      opacity: 0;
+    }
+    86.1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker-in-1 {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+    }
+    10.1% {
+      opacity: 1;
+    }
+    10.2% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    20.1% {
+      opacity: 1;
+    }
+    20.6% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 0;
+    }
+    30.1% {
+      opacity: 1;
+    }
+    30.5% {
+      opacity: 1;
+    }
+    30.6% {
+      opacity: 0;
+    }
+    45% {
+      opacity: 0;
+    }
+    45.1% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    55% {
+      opacity: 1;
+    }
+    55.1% {
+      opacity: 0;
+    }
+    57% {
+      opacity: 0;
+    }
+    57.1% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    60.1% {
+      opacity: 0;
+    }
+    65% {
+      opacity: 0;
+    }
+    65.1% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    75.1% {
+      opacity: 0;
+    }
+    77% {
+      opacity: 0;
+    }
+    77.1% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+    }
+    85.1% {
+      opacity: 0;
+    }
+    86% {
+      opacity: 0;
+    }
+    86.1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+      
 
 .header{
     display: flex;
-    background-color: #05080a;
+    background-color: #03014091;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 46px;
+    padding: 20px;
 }
 
 .header__logo{
@@ -44,14 +242,14 @@ body{
 }
 
 .header__nav a:hover{
-    background-color: #cbe300;
+    background-color: #05C7F2;
     color: #0c1014;
     text-decoration: underline;
     transition: 0.5s;
 }
 
  a.header__nav--active{
-    background-color: #cbe300;
+    background-color: #05C7F2;
     color: #0c1014;
     pointer-events: none;
 }
@@ -63,17 +261,18 @@ body{
 
 .pricing-plan{
     flex: 1;
-    background-color: #1f262c;
+    background-color: #7c038cc5;
     padding: 30px;
+    border: 2px solid black;
     border-radius: 6px;
-    box-shadow: 0 5px 12px #cbe300;
+    box-shadow: 0 5px 12px black;
     display: flex;
     flex-direction: column;
 }
 
 .class-plan__title{
     text-transform: uppercase;
-    border-bottom: 2px solid #cbe300;
+    border-bottom: 2px solid black;
     margin-top: 0;
     padding-bottom: 10px;
     letter-spacing: 2px;
@@ -89,20 +288,19 @@ body{
 
 .pricing-plan__features{
     margin: 0 0 35px;
-    color: #b5b5b5;
     padding-left: 16px;
     line-height: 1.8;
     flex: 1;
 }
 
 .pricing-plan__features li::marker{
-    color: #cbe300;
+    color: #05C7F2;
 }
 
 .pricing-plan__cta{
     text-decoration: none;
     color: #0c1014;
-    background-color: #cbe300;
+    background-color: #05C7F2;
     border-radius: 6px;
     text-transform: uppercase;
     font-size: 16px;
@@ -113,7 +311,7 @@ body{
 
 .pricing-plan__cta:hover{
     background-color: #0c1014;
-    color: #cbe300;
+    color: #05C7F2;
     transition: 0.2s;
-    outline: 2px solid #cbe300;
+    outline: 2px solid #05C7F2;
 }
