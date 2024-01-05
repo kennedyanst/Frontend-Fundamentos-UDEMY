@@ -1,0 +1,13 @@
+:root{
+    --primary-color: #5BB3D3;
+    --light-color: #C7DDE4;
+    --dark-color: #171E2C;
+    --secondary-color: #327AA8;
+    --terciary-color: #375A77;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+
