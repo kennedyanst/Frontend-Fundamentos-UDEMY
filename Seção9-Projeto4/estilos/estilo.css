@@ -8,6 +8,60 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    background-image: url("../imagens/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+}
+
+.wrapperContainer-dark{
+    background: linear-gradient(150deg, var(--dark-color) 90%, var(--secondary-color), var(--primary-color));
 }
 
 
+
+.container {
+    max-width: 1276px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 2rem 0;
+}
+
+.header_nav a{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 2rem 2rem;
+    border: solid 1px white;
+    text-decoration: none;
+    color: cyan;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.655);
+    background-color: rgba(0, 0, 0, 0.626);
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.header_nav ul{
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+
+}
+
+.heroBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
