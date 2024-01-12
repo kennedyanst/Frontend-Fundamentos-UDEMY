@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html{
-    background-color: cyan;
+    background-image: linear-gradient(cyan, black);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     min-height: 100vh;
 
