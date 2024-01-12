@@ -57,3 +57,10 @@ legend{
     font-size: 1.3em;
     margin-bottom: .5em;
 }
+
+.btn {
+    width: fit-content;
+    margin: auto;
+    background-color: aquamarine;
+    cursor: pointer;
+}
