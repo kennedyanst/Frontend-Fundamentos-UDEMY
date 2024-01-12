@@ -59,8 +59,18 @@ legend{
 }
 
 .btn {
-    width: fit-content;
-    margin: auto;
-    background-color: aquamarine;
+    margin-left: auto;
+    background-color: rgb(255, 150, 127);
     cursor: pointer;
 }
+
+.actions{
+    display: flex;
+    gap: 1em;
+}
+
+.btn2{
+    background-color: aquamarine;
+    
+}
+
