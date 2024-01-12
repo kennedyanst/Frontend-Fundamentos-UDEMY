@@ -25,14 +25,67 @@
             <br><br>
             Possui atividde extra?
             <label>
-                <input type="radio" name="atvExtra" id=""> Sim
+                <input type="radio" name="atvExtra" id="" value="s"> Sim
             </label>
             <label>
-                <input type="radio" name="atvExtra" id=""> Não
+                <input type="radio" name="atvExtra" id="" value="n"> Não
             </label>
 
             <input type="submit" value="Enviar" required>
         </fieldset>
+
+        <fieldset>
+            <legend> Área de Interesse</legend>
+            <label for="">
+                <input type="checkbox" name="interesse" value="html" id="">HTML
+            </label>
+
+            <label for="">
+                <input type="checkbox" name="" value="css" id="">CSS
+            </label>
+
+            <label for="">
+                <input type="checkbox" name="" value="js" id="">Javascript
+            </label>
+
+            <label for="">
+                <input type="checkbox" name="" value="python" id="">Python
+            </label>
+            
+            <label for="">
+                <input type="checkbox" name="" value="java" id="">Java
+            </label>
+
+            <br><br>
+            <select name="linguagem" required multiple size="8">
+                <option>Selecione uma</option>
+
+                <optgroup label="frontend">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </optgroup>
+                
+
+                <optgroup label="backend">
+                    <option value="java">JAVA</option>
+                    <option value="python">Python</option>
+                </optgroup>
+            </select>
+
+            <input type="text" list="linguagemList">
+            <datalist id="linguagemList">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="Javascript">
+                <option value="JAVA">
+                <option value="Python">
+                <option value="PHP">
+            </datalist>
+        </fieldset>
+
+        <br><br><br>
+        <input type="submit" value="Enviar" required>
     </form>
     
 </body>
