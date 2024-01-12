@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
+    <style>
+        body{
+            padding-bottom: 100vh;
+            
+        }
+
+        textarea{
+            resize: none;
+        }
+    </style>
 </head>
 <body>
     <form action="">
@@ -12,7 +23,7 @@
 
             <label for="">Email</label>
             <br>
-            <input type="email" name="email" id="">
+            <input type="email" name="email"  placeholder="meuemail@email.com">
             <br><br>
 
             <label for="filhos">Quantidade de filhos</label>
@@ -84,8 +95,46 @@
             </datalist>
         </fieldset>
 
+        <fieldset>
+            <legend>Menssagem</legend>
+            <textarea name="msg" cols="30" rows="8" maxlength="10">
+            </textarea>
+
+            <textarea cols="30" rows="10" readonly disabled>
+CONTRATO DE UTILIZAÇÃO
+        1.1 REGRA 1
+
+        1.2 REGRA 2
+
+            </textarea>
+            <label for="">
+                <input type="checkbox" checked> Li e aceito o contrato
+            </label>
+
+            <br><br>
+            <input type="file" name="" id="">
+        </fieldset>
+
+        <input type="hidden" value="abcdf">
+
         <br><br><br>
         <input type="submit" value="Enviar" required>
+        <input type="button" value="Botão">
+
+        <button type="submit">Mandar com tag button</button>
+        <button type="button">Vai</button>
+
+        <input type="search">
+
+        <br><br>
+
+        <input type="range" min="0" max="10" step="2">
+
+        <br><br>
+
+        <input type="time" name="" id="">
+        <br><br>
+        <input type="color" name="" id="">
     </form>
     
 </body>
