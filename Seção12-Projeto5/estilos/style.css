@@ -40,6 +40,24 @@ input, textarea {
     border-bottom-color: thistle;
     padding: .75em;
     margin: .75em 0 2.5em;
+    color: white;
+    outline: none;
+}
+
+input:invalid:focus, textarea:invalid:focus{
+    background-color: rgba(255, 0, 0, 0.2);
+    border-bottom-color: red;
+}
+
+input:valid, textarea:valid{
+    background-color: rgba(0, 255, 0, 0.2);
+    border-bottom-color: green;
+}
+
+input:focus, textarea:focus{
+    background-color: rgba(223, 11, 238, 0.462);
+    outline: none;
+    border-bottom-color: cyan;
 }
 
 legend{
